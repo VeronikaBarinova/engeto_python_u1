@@ -1,1 +1,1 @@
-# engeto_python_u1
+# první projekt do Engeto Online Python Akademie
