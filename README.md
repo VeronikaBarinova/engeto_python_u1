@@ -2,5 +2,5 @@
 analyzer.py
 task_template.py
 
-#Second assignment
+# Second assignment
 tic_tac_toe.py
