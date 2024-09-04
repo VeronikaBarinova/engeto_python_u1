@@ -1,7 +1,7 @@
 # Scraper uloha c. 3
 
 ## Popis
-Slouzi pro stahovani dat z vybranych URL a ukladani do souboru ve formatu CSV. Program je napsan v jazyce Python a pouziva knihovny requests, BeautifulSoup a pandas.
+Slouzi pro stahovani dat z vybranych URL a ukladani do souboru ve formatu CSV. Program je napsan v jazyce Python a pouziva knihovny requests, BeautifulSoup.
 
 ## Instalace knihoven
 Pouzite knihovny jsou ulozeny v souboru requirements.txt. Pro jejich instalaci staci spustit nasledujici prikaz:
