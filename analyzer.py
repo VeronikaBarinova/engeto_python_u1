@@ -38,8 +38,9 @@ def login(users, text_length) -> str:
         exit(-1)
 
 def get_text_choice() -> int:
-    choice = input("Enter a number btw. 1 and 3 to select: ")
-    if not choice.isnumeric() or int(choice) not in range(1, 4):
+    text_size:int = len(TEXTS)
+    choice = input(f"Enter a number btw. 1 and {text_size} to select: ")
+    if not choice.isnumeric() or int(choice) not in range(1, text_size + 1):
         print("Invalid choice, terminating the program..")
         exit(-1)
     return int(choice)
@@ -52,9 +53,9 @@ def analyze_text(text:str, stats: dict) -> dict:
     for word in words:
         if word.istitle():
             stats["titlecase"] += 1
-        if word.isupper():
+        if word.isupper() and word.isalpha():
             stats["uppercase"] += 1
-        if word.islower():
+        if word.islower() and word.isalpha():
             stats["lowercase"] += 1
         if word.isnumeric():
             stats["numeric"] += 1
